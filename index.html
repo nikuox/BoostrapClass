@@ -33,14 +33,23 @@
       
     }
 
+    .card__product__hover {
+      position: relative;
+
+
+    }
+
     .product__hover:hover{
       background: #7375758b;
-opacity: 0.5;
+      opacity: 0.5;
 }
 
-.product__sociallogo svg{
-  
+   .product__sociallogo svg{
+    position: absolute;
+    size: 30px;
+    top: 0;
 }
+
 
     
 
@@ -174,8 +183,8 @@ opacity: 0.5;
 <div class="container">
   <div class="row g-0 mt-5">
     <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
-    <div class="card product__hover">
-      <img src="assets/img/italy.jpg" class="border-0 rounded-0 "/>
+    <div class="card  card__product__hover ">
+      <img src="assets/img/italy.jpg" class="border-0 rounded-0 product__hover "/>
     </div>
   </div>
   <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
