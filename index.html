@@ -63,9 +63,30 @@
       height: 50px;
       border: 1px solid gray;
       text-align: start;
+      
 
     }
 
+    .question__style .answer__style{
+      width: 600px;
+      height: 50px;
+     
+    }
+
+    .question__style .answer__text{
+      font-size: 20px;
+      text-align: start;
+    }
+
+    .icon__style::after{
+     
+      content: '﹀';
+    }
+
+    .icon__style.collapsed::after{
+  
+      content: '︿';
+    }
     /* .card_product {
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       height: 450px;
@@ -281,13 +302,13 @@
 
       <div class="container question__style mb-10">
         <div class="row"> <div class="col-xl-4 col-xxl-3"><p >Asked questions</p>
-          <button class="btn button__question__style" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <button class="btn button__question__style icon__style collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           Lorem ipsum dolor sit amet?
           </button>
         </p>
         <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="card card-body answer__style">
+            <p class="answer__text"> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
           </div>
         </div>
         
