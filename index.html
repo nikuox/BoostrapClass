@@ -50,15 +50,15 @@
         margin-bottom: 30px;
     }
 
-    .question__style{
+    /* .question__style{
       text-align:start;
       font-size: 30px;
       font-weight: 300;
       margin-top: 50px;
       color: rgb(75, 72, 72);
-    }
+    } */
 
-    .button__question__style{
+    /* .button__question__style{
       width: 600px;
       height: 50px;
       border: 1px solid gray;
@@ -76,9 +76,43 @@
     .question__style .answer__text{
       font-size: 20px;
       text-align: start;
+    } */
+
+
+    .question__header{
+      font-size: 20px;
+      font-weight: 500;
+      color: rgba(161, 159, 159, 0.611);
     }
 
-    .icon__style::after{
+.accordion__button__style{
+  background-color: rgba(161, 159, 159, 0.611) !important;
+  color: white !important;
+}
+
+.aboutme__style{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 20px;
+
+  
+}
+
+.aboutme__style .aboutme__header{
+  font-size: 30px;
+  font-weight: 400;
+  color: rgba(88, 88, 88, 0.699);
+}
+
+.aboutme__style .aboutme__description{
+  color: rgba(55, 54, 54, 0.747);
+
+}
+
+
+
+
+
+    /* .icon__style::after{
      
       content: '﹀';
     }
@@ -86,7 +120,7 @@
     .icon__style.collapsed::after{
   
       content: '︿';
-    }
+    } */
     /* .card_product {
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       height: 450px;
@@ -298,9 +332,69 @@
       
       </div>
 
+      <div class="container mt-5">
+        <div class="row">
+          <p class="question__header">Repetetive Questions</p>
+          </div>
+      </div>
+
+   <div class="container mt-3 mb-5">
+    <div class="row row-cols-2 g-5">
+      <div class="col-12 col-md-12 col-xl-9 col-xxl-8">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed accordion__button__style" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Question 1
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+              <div class="accordion-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, repellat!
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed accordion__button__style" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Question 2
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, illum?
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed accordion__button__style" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+               Question 3
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, beatae.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-12 col-xl-3 col-xxl-4">
+        <div class="aboutme__style">
+          <div class="aboutme__header"><p>About Us</p></div>
+          <div class="aboutme__description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque enim illo velit eos at nulla repellat molestiae officia dolore, dicta et adipisci. Vero fugiat inventore quam cupiditate voluptatibus soluta dolores.
+          Cum exercitationem voluptas amet sint quisquam sapiente sequi ut fugiat natus rem. Veritatis tempora nemo error inventore ipsa tempore, libero dicta debitis porro unde sapiente ipsam molestiae. Ea, pariatur aut?</p></div>
+        </div>
+      </div>
+    </div>
+   </div>
 
 
-      <div class="container question__style mb-10">
+
+  
+
+      <!-- <div class="container question__style mb-10">
         <div class="row"> <div class="col-xl-4 col-xxl-3"><p >Asked questions</p>
           <button class="btn button__question__style icon__style collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
           Lorem ipsum dolor sit amet?
@@ -314,7 +408,7 @@
         
         
         
-        </div></div></div>
+        </div></div></div> -->
       
         
 
