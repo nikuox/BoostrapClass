@@ -10,14 +10,20 @@
     <title>Project 2</title>
     <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-  </head>
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link rel="stylesheet" href="assets/scss/style.scss"> 
+
+</head>
 
   <style>
     body{
       font-family: 'Baloo Bhaijaan 2', cursive;
       font-family: 'Roboto', sans-serif;
-    }
-    .navbar__style {
+    } 
+
+
+
+     .navbar__style {
       background-color: white;
       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
@@ -30,11 +36,12 @@
     }
 
     .nav__link__style{
+    
       background-image: linear-gradient(
         to right,
         #ec5b0d,
         #ec5b0d 50%,
-        #000 50%
+        #742e08 50%
       );
       background-size: 200% 100%;
       background-position: -100%;
@@ -44,10 +51,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 0.3s ease-in-out;
-    }
+    } 
 
 
-    .nav__link__style:before{
+     .nav__link__style:before{
       content: "";
       background: #ec5b0d;
       display: block;
@@ -92,9 +99,9 @@
 }
 
 
-.slider__style{
+/* .slider__style{
   height: 600px !important;
-}
+} */
 
 /* .slider__style img{
   object-fit:fill !important;
@@ -116,6 +123,12 @@
     .product__title{
         text-align: center;
         margin-bottom: 30px;
+    }
+.card-body ul li{
+  color: rgba(55, 54, 54, 0.747) !important;
+}
+    .card-text{
+      color: #ec5b0d !important;
     }
 
     /* .question__style{
@@ -150,16 +163,16 @@
     .question__header{
       font-size: 20px;
       font-weight: 500;
-      color: rgba(161, 159, 159, 0.611);
+      color:#ec5b0d;
     }
 
 .accordion__button__style{
-  background-color: rgba(161, 159, 159, 0.611) !important;
-  color: white !important;
+  background-color: #ec5b0d !important;
+  color: #faf7f6 !important;
 }
 
 .aboutme__style{
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.292) 0px 1px 4px;
   padding: 20px;
 
   
@@ -168,13 +181,19 @@
 .aboutme__style .aboutme__header{
   font-size: 30px;
   font-weight: 400;
-  color: rgba(88, 88, 88, 0.699);
+  color: #ec5b0d;
 }
 
 .aboutme__style .aboutme__description{
   color: rgba(55, 54, 54, 0.747);
-
 }
+
+.aboutme__style .aboutme__description ul{
+  list-style: none;
+}
+
+
+
 
 
 
@@ -602,9 +621,9 @@
               <div class="card card_product">
                  <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
                 <div class="card-body">
-                  <p class="card-text">Lorem, ipsum.</p>
-                  <h2 class="card-text">Lorem, ipsum.</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Amount of days</li>
                     <li class="list-group-item">Hotel</li>
@@ -619,9 +638,9 @@
                   <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
               
                 <div class="card-body">
-                  <p class="card-text">Lorem, ipsum.</p>
-                  <h2 class="card-text">Lorem, ipsum.</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Amount of days</li>
                     <li class="list-group-item">Hotel</li>
@@ -636,9 +655,9 @@
                   <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
               
                 <div class="card-body">
-                  <p class="card-text">Lorem, ipsum.</p>
-                  <h2 class="card-text">Lorem, ipsum.</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Amount of days</li>
                     <li class="list-group-item">Hotel</li>
@@ -653,9 +672,77 @@
                   <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
               
                 <div class="card-body">
-                  <p class="card-text">Lorem, ipsum.</p>
-                  <h2 class="card-text">Lorem, ipsum.</h2>
-                  <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Amount of days</li>
+                    <li class="list-group-item">Hotel</li>
+                    <li class="list-group-item">Price</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+              <div class="card card_product">
+                
+                  <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
+              
+                <div class="card-body">
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Amount of days</li>
+                    <li class="list-group-item">Hotel</li>
+                    <li class="list-group-item">Price</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+              <div class="card card_product">
+                
+                  <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
+              
+                <div class="card-body">
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Amount of days</li>
+                    <li class="list-group-item">Hotel</li>
+                    <li class="list-group-item">Price</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+              <div class="card card_product">
+                
+                  <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
+              
+                <div class="card-body">
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Amount of days</li>
+                    <li class="list-group-item">Hotel</li>
+                    <li class="list-group-item">Price</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
+              <div class="card card_product">
+                
+                  <img src="assets/img/italy.jpg" alt=""  class="card-img-top rounded-top-1 overflow-hidden"/>
+              
+                <div class="card-body">
+                  <p class="card-text">Name of country</p>
+                  <h2 class="card-text">Hotel Name</h2>
+                  <p class="card-text">Description of the hotel and country.</p>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">Amount of days</li>
                     <li class="list-group-item">Hotel</li>
@@ -750,8 +837,9 @@
       <div class="col-12 col-md-12 col-xl-3 col-xxl-4">
         <div class="aboutme__style">
           <div class="aboutme__header"><p>About Us</p></div>
-          <div class="aboutme__description"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque enim illo velit eos at nulla repellat molestiae officia dolore, dicta et adipisci. Vero fugiat inventore quam cupiditate voluptatibus soluta dolores.
-          Cum exercitationem voluptas amet sint quisquam sapiente sequi ut fugiat natus rem. Veritatis tempora nemo error inventore ipsa tempore, libero dicta debitis porro unde sapiente ipsam molestiae. Ea, pariatur aut?</p></div>
+          <div class="aboutme__description">
+            <ul><li class="ion-email icon">email@yahoo.com</li><li class="ion-ios-telephone icon">+21887690</li></ul>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, qui.</p></div>
         </div>
       </div>
     </div>
