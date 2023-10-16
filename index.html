@@ -193,7 +193,10 @@
 
     .aboutme__style {
       box-shadow: rgba(0, 0, 0, 0.292) 0px 1px 4px;
+      height: 100%;
+      width: 100%;
       padding: 20px;
+      margin-top: 30px;
     }
 
     .aboutme__style .aboutme__header {
@@ -821,14 +824,14 @@
 
     <!-- products -->
 
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5" style="padding-top: 100px">
       <div class="row">
         <div class="col-12 col-md-12 col-lg-8 col-xl-8 m-auto">
           <div class="product__title mt-5">
-            <h1>Welcome to Travel!</h1>
-            <p>
+            <h1 style="border-bottom: 1px solid #742e08">Welcome to Travel!</h1>
+            <!-- <p>
               _______________________________________________________________________________
-            </p>
+            </p> -->
             <h5>
               From weekend getaways to extended, family-focused itineraries and
               luxury escapes, when you book with Allure Travel you’ll enjoy the
@@ -841,7 +844,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="padding-top: 100px">
       <div class="row g-5">
         <div class="col-12 col-md-6 col-xl-4 col-xxl-3">
           <div class="card card_product">
@@ -1007,7 +1010,7 @@
 
     <!-- bottom slider -->
 
-    <div class="container">
+    <div class="container mt-5" style="padding-top: 100px">
       <div
         class="swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4 mt-5"
         data-slider-nav-autoplay-interval="2000"
@@ -1076,15 +1079,15 @@
 
     <!-- bottom qustion -->
 
-    <div class="container mt-5">
+    <div class="container mt-5" style="padding-top: 100px">
       <div class="row">
         <p class="question__header">Repetitive Questions</p>
       </div>
     </div>
 
     <div class="container mt-3 mb-5">
-      <div class="row row-cols-2 g-5">
-        <div class="col-12 col-md-12 col-xl-9 col-xxl-8">
+      <div class="row g-5">
+        <div class="col-12">
           <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
@@ -1160,18 +1163,57 @@
 
         <!-- bottom about us -->
 
-        <div class="col-12 col-md-12 col-xl-3 col-xxl-4">
-          <div class="aboutme__style">
-            <div class="aboutme__header"><p>About Us</p></div>
-            <div class="aboutme__description">
-              <ul>
-                <li class="ion-email icon">email@yahoo.com</li>
-                <li class="ion-ios-telephone icon">+21887690</li>
-              </ul>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis, qui.
-              </p>
+        <div class="container" style="padding-top: 100px">
+          <div class="row row-cols-2 aboutme__style">
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6"
+              style="border-right: 1px solid #ec5b0d"
+            >
+              <div class="aboutme__header"><p>About Us</p></div>
+              <div class="aboutme__description">
+                <ul>
+                  <li class="ion-email icon">email@yahoo.com</li>
+                  <li class="ion-ios-telephone icon">+21887690</li>
+                </ul>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+                  libero minima voluptas. Velit atque tempore soluta similique,
+                  aperiam officiis, libero magnam, praesentium error accusamus
+                  pariatur.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 aboutme__description"
+            >
+              <div class="row row-cols-3 mt-4">
+                <div>
+                  <ul>
+                    <li>Home</li>
+                    <li>Booking</li>
+                    <li>Flights</li>
+                    <li>Hotels</li>
+                    <li>Questions</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>Discount</li>
+                    <li>Socials</li>
+                    <li>About Us</li>
+                    <li>Journal</li>
+                  </ul>
+                </div>
+                <div>
+                  <ul>
+                    <li>Comments</li>
+                    <li>Videos</li>
+                    <li>Suggestions</li>
+                    <li>Help[ Center</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
